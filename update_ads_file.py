@@ -6,20 +6,20 @@ import shutil
 ads_files_url = "http://naeu-o-dn.playblackdesert.com/UploadData/ads_files"
 language_data_url_template = "https://naeu-o-dn.playblackdesert.com/UploadData/ads/languagedata_en/{}/languagedata_en.loc"
 
-# Diretório local
+# Diretorio local
 destination_dir = r"C:\Pearlabyss\BlackDesert\ads"
 destination_file = os.path.join(destination_dir, "languagedata_pt.loc")
 
 def get_file_number():
     response = requests.get(ads_files_url)
     if response.status_code == 200:
-        # Divide o conteúdo em linhas e procura pela linha específica
+        # Divide o conteudo em linhas e procura pela linha especifica
         lines = response.text.splitlines()
         for line in lines:
             if "languagedata_en.loc" in line:
                 # Extraindo o número associado ao "languagedata_en.loc"
                 parts = line.split()
-                return parts[-1]  # O número deve ser o último elemento
+                return parts[-1]
     raise Exception("Não foi possível obter o número do arquivo.")
 
 def download_file(file_number):
