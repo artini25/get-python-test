@@ -1,10 +1,10 @@
 What this script does.
 
-Go to this address: http://naeu-o-dn.playblackdesert.com/UploadData/ads_files
-Does note down number for =en= file
-Go to address https://naeu-o-dn.playblackdesert.com/UploadData/ads/languagedata_en/###/languagedata_en.loc(Replace =###= with number from step 1)
-Navigate to <YOUR-GAME-FOLDER>/ads/
-Replace =pt= file with =en= file
+1. Go to this address: http://naeu-o-dn.playblackdesert.com/UploadData/ads_files
+2. Does note down number for =en= file
+3. Go to address https://naeu-o-dn.playblackdesert.com/UploadData/ads/languagedata_en/###/languagedata_en.loc(Replace =###= with number from step 1)
+4. Navigate to <YOUR-GAME-FOLDER>/ads/
+5. Replace =pt= file with =en= file
 
 Used 'os', 'requests' and 'shutil' from python.
 
